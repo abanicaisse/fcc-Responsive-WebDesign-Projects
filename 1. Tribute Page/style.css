@@ -1,0 +1,158 @@
+#main {
+    background-color: black;
+    color: white;
+    font-family: Poppins, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+figure {
+    background-color: white;
+    width: 100%;
+    height: 70vh;
+    margin-left: 0;
+    padding: 1.5rem 0;
+}
+
+#img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blue;
+    width: 50%;
+    height: 90%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+#image {
+    max-width: 100%;
+    height: 100%;
+}
+
+#img-caption {
+    background-color: red;
+    text-align: center;
+    color: black;
+}
+
+header {
+    text-align: center;
+    line-height: 1rem;
+}
+
+#tribute-info {
+    padding: 2rem 1rem;
+    width: 70vw;
+    margin: auto;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 
+    "left right";
+}
+
+.biography {
+    grid-area: left;
+}
+
+.more-images {
+    grid-area: right;
+    width: 19rem;
+    height: 100%;
+    display: grid;
+    row-gap: 3rem;
+    grid-template-rows: 20rem 20rem;
+}
+
+.img-1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.img-2 {
+    width: 100%;
+    height: auto;
+}
+
+.more-images figcaption {
+    margin-top: -0.3rem;
+    background-color: red;
+    text-align: center;
+    padding: 0.4rem;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0rem;
+    background-color: white;
+    color: black;
+}
+
+#tribute-link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fffff1;
+}
+
+#tribute-link:hover {
+    color: #0000b1;
+    transition: ease-in;
+}
+
+@media (max-width: 850px) {
+    #main {
+        background-color: black;
+    }
+
+    #tribute-info {
+        width: 90%;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        "top"
+        "bottom"
+    }
+
+    .more-images {
+        grid-area: top;
+        background-color: black;
+        width: 100%;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-rows: 1fr;
+        margin-left: 1rem;
+    }
+
+    .ig1 {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-1 {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .ig2 {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .biography {
+        padding-left: 2rem;
+        margin: auto;
+        grid-area: bottom;
+        text-align: left;
+    }
+
+    .biography h2 {
+        text-align: center;
+    }
+
+}
