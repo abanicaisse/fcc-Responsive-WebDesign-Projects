@@ -20,7 +20,7 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: blue;
+    background-color: transparent;
     width: 50%;
     height: 90%;
     margin: auto;
@@ -28,12 +28,13 @@ figure {
 }
 
 #image {
+    border-radius: 0.5rem;
     max-width: 100%;
     height: 100%;
 }
 
 #img-caption {
-    background-color: red;
+    margin-top: 1rem;
     text-align: center;
     color: black;
 }
