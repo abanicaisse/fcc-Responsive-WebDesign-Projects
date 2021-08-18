@@ -8,56 +8,59 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">CodeNoobs Annual Survey</h1>
-    <p id="description">Please tell us what you think about our last year services, it helps us enhance the quality of our services and programs</p>
-    <form action="https://google.com" id="survey-form">
-        <label id="name-label" for="name">Name</label> <br>
-        <input type="text" id="name" placeholder="eg. John Doe"> <br>
+    <div id="container">
+        <h1 id="title">CodeNoobs Annual Survey</h1>
+        <p id="description">Please tell us what you think about our last year services, it helps us enhance the quality of our services and programs</p>
+        <form action="https://google.com" id="survey-form">
+            <label id="name-label" for="name">Name</label> <br>
+            <input type="text" id="name" placeholder="eg. John Doe"> <br>
 
-        <label id="email-label" for="email">Email</label> <br>
-        <input type="email" id="email" placeholder="eg. johndoe@example.com"> <br>
+            <label id="email-label" for="email">Email</label> <br>
+            <input type="email" id="email" placeholder="eg. johndoe@example.com"> <br>
 
-        <label id="number-label" for="number">Phone Number</label> <br>
-        <input type="number" id="number" min="8" max="10" max-length="10" placeholder="0707034321"> <br>
+            <label id="number-label" for="number">Phone Number</label> <br>
+            <input type="number" id="number" min="8" max="10" max-length="10" placeholder="0707034321"> <br>
     <!--Dropdown Form-->
-    <label for="best-service">What was you best service from CodeNOobs this year ?</label> <br>
-        <select name="best-service" id="dropdown">
-            <option value="mentorship"> Mentorship Service</option>
-            <option value="hackaton">Monthly hackatons</option>
-            <option value="learning">Learning Platform and services</option>
-            <option value="web-services">Web services and web development services</option>
-        </select>
+            <label for="best-service">What was your best service from CodeNoobs this year ?</label> <br>
+            <select name="best-service" id="dropdown">
+                <option value="mentorship"> Mentorship Service</option>
+                <option value="hackaton">Monthly hackatons</option>
+                <option value="learning">Learning Platform and services</option>
+                <option value="web-services">Web services and web development services</option>
+            </select>
     <!--Radio buttons setup-->
-    <fieldset>
-        <legend>Do you Like our monthly award ceremonies for hackatons winners</legend>
+            <fieldset class="radio">
+                <legend>Do you Like our monthly award ceremonies for hackatons winners</legend>
 
-        <input type="radio" name="award-ceremony" value="no" id="no">
-        <label for="no">NO, I really dont like them it worth you removing them</label> <br>
+                <input type="radio" name="award-ceremony" value="no" id="no">
+                <label for="no">NO, I really dont like them</label> <br>
 
-        <input type="radio" name="award-ceremony" value="yes" id="yes">
-        <label for="yes">YES, I really Enjoy them, please never continue that way</label>
-    </fieldset>
+                <input type="radio" name="award-ceremony" value="yes" id="yes">
+                <label for="yes">YES, I really Enjoy them</label>
+            </fieldset>
     <!--Checkbox buttons setup-->
-    <fieldset>
-        <legend>Please let us know which languages you use the most</legend>
+            <fieldset class="checkbox">
+                <legend>Please let us know which languages you use the most</legend>
 
-        <input type="checkbox" name="languages" value="javascript" id="javascript"> 
-        <label for="javascript">Javascrip</label> <br>
+                <input type="checkbox" name="languages" value="javascript" id="javascript"> 
+                <label for="javascript">Javascrip</label> <br>
 
-        <input type="checkbox" name="languages" value="python" id="python"> 
-        <label for="python">python</label> <br>
+                <input type="checkbox" name="languages" value="python" id="python"> 
+                <label for="python">python</label> <br>
 
-        <input type="checkbox" name="languages" value="java" id="java"> 
-        <label for="java">Java</label> <br>
+                <input type="checkbox" name="languages" value="java" id="java"> 
+                <label for="java">Java</label> <br>
 
-        <input type="checkbox" name="languages" value="golang" id="golang"> 
-        <label for="golang">Golang</label> <br>
+                <input type="checkbox" name="languages" value="golang" id="golang"> 
+                <label for="golang">Golang</label> <br>
 
-        <input type="checkbox" name="languages" value="ruby" id="ruby"> 
-        <label for="ruby">Ruby</label> <br>
-    </fieldset> 
-    <textarea name="comments" id="comment" cols="30" rows="10"></textarea> 
-    <button type="submit" id="submit">Submit</button>
-    </form>
+                <input type="checkbox" name="languages" value="ruby" id="ruby"> 
+                <label for="ruby">Ruby</label> <br>
+            </fieldset> 
+            <label for="comments">Drop us your suggestions</label>
+            <textarea name="comments" id="comment" cols="30" rows="10"></textarea> <br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
