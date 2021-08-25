@@ -1,0 +1,170 @@
+:root {
+    --blue: rgb(85, 177, 219);
+    --white: rgb(241, 238, 232);
+}
+
+* {box-sizing: border-box;}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif, "roboto-sans";
+    font-size: 1rem;
+    line-height: 1.12;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+}
+
+.white-bg {
+    background-color: var(--white);
+}
+
+.blue-bg {
+    background-color: var(--blue);
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: auto;
+}
+
+video {
+    max-width: 100%;
+}
+
+#header {
+    text-align: center;
+}
+
+#header a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 0.35rem 0;
+}
+
+#header a:nth-child(5) {
+    padding-bottom: 2rem;
+}
+
+#header a:hover {
+    color: var(--blue);
+    animation: navlink-grow forwards ease 500ms;
+}
+
+@keyframes navlink-grow {
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+#header-img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 8rem;
+    padding: 0.5rem 0;
+}
+
+#main {
+    text-align: center;
+    padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.buy {
+    text-decoration: none;
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 0.7rem;
+}
+
+#main img {
+    max-width: 100%;
+    padding-bottom: 2rem;
+}
+
+#about {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.about-landing-img {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.about-cards {
+    margin-top: -1.2rem;
+    padding-bottom: 2rem;
+}
+
+.feature-cards {
+    border: 1px solid var(--blue);
+    border-radius: 1rem;
+    margin: 0.5rem 2rem;
+    padding: 0.5rem 2rem;
+    margin-bottom: 1rem;
+}
+
+#video {
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+#video video {
+    border-radius: 0.7rem;
+}
+
+#form-section {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#form {
+    display: block;
+}
+
+input#email {
+    border: 1px solid var(--blue);
+    border-radius: 0.3rem;
+    padding-left: 0.4567rem;
+    padding: 0.3rem 0 0.3rem 0.4567rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+form a {
+    text-decoration: none;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.6rem;
+}
+
+#products {
+    text-align: center;
+}
+
+#products img {
+    position: relative;
+    border-radius: 0.7rem;
+}
+
+.products-card {
+    padding-bottom: 2rem;
+}
+
+
+
+
+
