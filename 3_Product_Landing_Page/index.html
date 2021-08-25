@@ -1,16 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Product Landing Page</title>
-</head>
+  </head>
 
-<body>
-jjj
-</body>
-
+  <body>
+<!--Header Section-->
+    <header id="header" class="white-bg">
+      <img src="logo" alt="" id="header-img" />
+      <nav id="nav-bar">
+        <a href="#main" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#about" class="nav-link">Pricing</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#form-section" class="nav-link">Contact</a>
+      </nav>
+    </header>
+<!--Main Section = Hero Section-->
+    <Main id="main" class="blue-bg">
+        <div class="main-intro"> 
+            <h1>Shop The Best Computer Found on the market actually</h1>
+            <p>Ace your Productivity with our latest Dell <strong>XPS 17 Pro</strong>, the best laptop actually sold at the market and surprisingly at the lowest price.</p>
+        </div>
+        <a href="#" class="buy" type="submit">Buy Now</a>
+        <div class="main-img"> 
+            <img src="./img/pc1.jpeg" alt="Dell Xps 17 2021">
+        </div>
+    </Main>
+<!--About Product Section-->
+    <section id="about" class="white-bg">
+        <h1>Features of the Dell XPS 17 Pro</h1>
+        <p>The best of all other laptops sold at the market included in only one simple and beautifully designed Laptop</p>
+        <div class="about-landing-img"> 
+            <img src="./img/pc6.jpeg" alt="beautiful Dell XPS 17 Pro">
+        </div>
+        <div class="about-cards">
+            <div class="feature-cards">
+                <h1>Processor</h1>
+                <p>Intel core I7 Oct 11th Generation processor with a 480Ghz Clockwise Speed</p>
+            </div>
+            <div class="feature-cards">
+                <h1>Storage</h1>
+                <p>Huge 2TB SSD Disk Storage made just inside of your computer so you'll never struggle with storage issues</p>
+            </div>
+            <div class="feature-cards"> 
+                <h1>Battery</h1>
+                <p>20 Hours of intensive battery autonomie, the most powerful battery performance you'll ever get on a Laptop</p>
+            </div>
+            <div class="feature-cards"> 
+                <h1>Warranty</h1>
+                <p>A 12 month money back Warranty, so you can have the possibility to bring back the product if it doesn't fit your requirement</p>
+            </div>
+        </div>
+    </section>
+<!--Embedded Video Section-->
+    <section id="video" class="blue-bg">
+        <video controls>
+            <source src="video.webm" type="video/webm">
+        </video>
+        <iframe src="" frameborder="0" class="embedded-video">
+        </iframe>
+    </section>
+<!--Email form section-->
+    <section id="form-section" class="white-bg">
+        <form action="https://freecodecamp.com/email-submit">
+            <label for="email"></label>
+            <imput type="email" id="email"></imput>
+            <a href="https://freecodecamp.com/email-submit id=" type="submit"></a>
+        </form>
+    </section>
+<!--Other Products section-->
+    <section id="products" class="blue-bg">
+        <h1>All Our Other Product</h1>
+        <div class="products-card"> 
+            <img src="./img/pc2.jpeg" alt="another Dell PC">
+            <h3>Dell XPS 15 Pro</h2>
+        </div>
+        <div class="products-card"> 
+            <img src="./img/pc3.jpeg" alt="another Dell PC">
+            <h3>Dell XPS 1</h2>
+        </div>
+        <div class="products-card"> 
+            <img src="./img/pc4.jpeg" alt="another Dell PC">
+            <h3>Dell XPS 13</h2>
+        </div>
+    </section>
+<!--Footer Section-->
+    <footer id="footer" class="white-bg">footer</footer>
+  </body>
 </html>
