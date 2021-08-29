@@ -4,7 +4,8 @@ These Projects were built for the purpose of getting the freeCodeCamp Responsive
 All the projects inside this repository are built using only pure HTML5 and CSS3. <br>
 
 *Preview of one Project built throught out this repository*
-![Product Landing Page Project](plp.png)
+
+![Product Landing Page Project Preview](https://user-images.githubusercontent.com/84383548/131246700-7465bf31-e10a-4949-a4ad-be5056aacbe0.png)
 
 ## Projects built:
 
@@ -58,7 +59,7 @@ figure {
 ```
 
 **Preview :**
-[![Tribute page Project](tp.png)](codepen.io/Nicaisse/full/XWRObzL)
+[![Tribute Page Project Preview](https://user-images.githubusercontent.com/84383548/131246871-a5b46701-9e1c-4a7f-a6c2-c1e8c05f54aa.png)](codepen.io/Nicaisse/full/XWRObzL)
 
 1. Survey Form
 
@@ -104,7 +105,7 @@ Some random CSS code from the project :
 ```
 
 **Preview :**
-[![Survey Form Project](sf.png)](codepen.io/Nicaisse/full/OJgyRqM)
+[![Survey Form Project Preview](https://user-images.githubusercontent.com/84383548/131246878-040e9c22-ea55-4593-8665-e490da3700b6.png)](codepen.io/Nicaisse/full/OJgyRqM)
 
 1. Product Landing page
 
@@ -158,7 +159,7 @@ Some random CSS code from the project :
 ```
 
 **Preview :**
-[![Product Landing Page Project](plp.png)](codepen.io/Nicaisse/full/dyRYyMW)
+[![Product Landing Page Project Preview](https://user-images.githubusercontent.com/84383548/131246700-7465bf31-e10a-4949-a4ad-be5056aacbe0.png)](codepen.io/Nicaisse/full/dyRYyMW)
 
 1. Technical Documentation Page
 
