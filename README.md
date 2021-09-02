@@ -163,7 +163,44 @@ Some random CSS code from the project :
 
 1. Technical Documentation Page
 
-*Still working on it*
+In this project we built a responsive technical documentation page using *css grid*
+
+You can Find the Code of this project either in this repo or on [my Codepen](codepen.io/Nicaisse/full/NWgNZEM)
+
+Some random CSS code from the project :
+
+```css
+body {
+  margin: 0rem;
+  display: grid;
+  grid-template-areas: "navbar main-doc";
+  grid-template-columns: 30% 70%;
+}
+
+#navbar {
+  padding: 1rem 0.5rem;
+  background-color: white;
+  color: white;
+  grid-area: navbar;
+  position: fixed;
+  top: 1rem;
+  right: 72.5%;
+  width: 23%;
+  background-color: hsl(0, 8%, 17%);
+  color: white;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.1rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+```
+
+**Preview :**
+![Technical Documentation Page Preview](https://user-images.githubusercontent.com/84383548/131806430-98827246-2d2a-4976-a585-ec52c1736467.png)
 
 1. Personal Portfolio Website
 
