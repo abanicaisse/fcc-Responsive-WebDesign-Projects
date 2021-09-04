@@ -527,3 +527,61 @@ nav {
         place-items: center;
     }
 }
+
+@media screen and (max-height: 30rem) {
+    #welcome-section .presentation {
+      display: grid;
+      align-items: center;
+    }
+
+    #welcome-section .presentation .icons {
+        margin: 1rem 0 1rem 0;
+    }
+
+    .icons .icons__elements {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.1rem;
+        border: 1px solid var(--accent-color);
+    }
+    
+    .intro {
+         line-height: 1.2;
+    }
+    
+    .intro > h1 {
+        font-size: 1.4rem;
+        padding-bottom: .5rem;
+    }
+    
+    .intro > h1 > span {
+        color: var(--accent-color);
+        font-size: 1.6rem;
+    }
+    
+    .intro > p {
+        font-size: 1rem;
+        line-height: 1.2;
+        padding-bottom: 1.5rem;
+    }
+    
+    .intro > .intro__btn {
+        color: white;
+        display: inline-block;
+        font-size: 1rem;
+        text-decoration: none;
+        border: 1px solid var(--accent-color);
+        border-radius: .5em;
+        padding: .4rem .6rem;
+        transition: background-color 500ms ease;
+    }
+    
+    .intro > .intro__btn:hover {
+        background-color: var(--overlay-color);
+    }
+    
+    .intro > .intro__btn + .intro__btn {
+        margin-left: 2rem;
+    }
+    
+}
