@@ -351,11 +351,51 @@ nav {
     text-align: center;    
 }
 
-
 #about .about__summary .summary__description .pro-links .code-link {
     color: white;
 }
 
+/* subscribe section */
+#subscribe {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 3rem 2rem;
+    display: grid;
+    place-items: center;
+    line-height: 2;
+}
+
+#subscribe .mail-input {
+    width: 80%;
+    display: grid;
+    padding: .5rem 0;
+}
+
+#subscribe .mail-input > input {
+    width: 70%;
+    padding: .5rem 2rem;
+    border: 1px solid var(--accent-color2);
+    border-radius: .3rem;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+
+#subscribe .mail-input > .subscribe-btn{
+    width: 70%;
+    background-color: var(--accent-color);
+    color: var(--accent-color2);
+    font-size: 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .3rem;
+    display: block;
+    justify-self: center;
+    transition: background-color 400ms ease;
+}
+
+#subscribe .mail-input > .subscribe-btn:hover {
+    background-color: var(--secondary-color);
+}
 
 
 
@@ -502,6 +542,7 @@ nav {
 
     #about .about__summary {
         flex-direction: row;
+        justify-content: center;
         gap: 1rem;
         align-items: center;
     }
@@ -514,9 +555,37 @@ nav {
         padding-top: 1rem;
     }
 
+        /* Subscribe section Media Querry */
+    #subscribe .mail-input {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        padding: .5rem 1rem;
+    }
+        
+    #subscribe .mail-input > input {
+        width: 70%;
+        padding: .7rem 2rem;
+        border-radius: 0;
+        margin-bottom: 0;
+        border-bottom-left-radius: 2rem;
+        border-top-left-radius: 2rem;
+    }
+        
+    #subscribe .mail-input > .subscribe-btn{
+        width: 30%;
+        padding: 0 1rem;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 2rem;
+        border-top-right-radius: 2rem;
+    }       
+
 }
 
-@media (min-width: 1200px) {
+
+
+@media (min-width: 75rem) {
     .menu-container .menu > div > div {
         width: 55%;
     }
