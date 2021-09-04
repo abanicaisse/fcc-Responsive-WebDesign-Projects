@@ -184,7 +184,6 @@ nav {
 
 
 /* Welcone-section */
-
 #welcome-section {
     width: 100vw;
     height: 100vh;
@@ -284,10 +283,78 @@ nav {
     .intro > .intro__btn + .intro__btn {
         margin-left: 0.3em;
     }
-
-
 }
 
+/* Skills section */
+#skills {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#skills .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#skills .cards-container .skills__cards {
+    border: 1px solid var(--accent-color);
+    border-radius: .3rem;
+    padding: 1rem 2rem;
+}
+
+#skills .cards-container .skills__cards > h3 {
+    font-size: 1.3rem;
+}
+
+#about {
+    width: 100%;
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 3rem 2rem;
+    color: white;
+}
+
+#about .about__summary {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about .about__summary > div > img {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+#about .about__summary .summary__description {
+    text-align: left;
+}
+
+#about .about__summary .summary__description > h3{
+    text-align: left;
+    padding: 1rem 0 2rem 0;
+}
+
+#about .about__summary .summary__description > h3 ~ p{
+    padding-bottom: 1rem;
+}
+
+#about .about__summary .summary__description .pro-links {
+    margin-top: 1rem;
+    text-align: center;    
+}
+
+
+#about .about__summary .summary__description .pro-links .code-link {
+    color: white;
+}
 
 
 
@@ -324,6 +391,7 @@ nav {
         gap: 8rem;
         background-color: var(--primary-color);
         padding: 0 10%;
+        z-index: 2;
     }
     
      #logo {
@@ -406,10 +474,56 @@ nav {
         height: 100%;
     }
 
+        /* Skills section Media Querry  */
+    #skills {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #skills .cards-container {
+        flex-direction: row;
+    }
+
+    #skills .cards-container .skills__cards {
+        height: 17rem;
+        display: grid;
+        place-items: center;
+    }
+
+        /* About me section Media Querry */
+    #about {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #about h1 {
+        width: 90%;
+    }
+
+    #about .about__summary {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    #about .about__summary > div {
+        width: 40%;
+    }
+
+    #about .about__summary .summary__description {
+        padding-top: 1rem;
+    }
+
 }
 
 @media (min-width: 1200px) {
     .menu-container .menu > div > div {
         width: 55%;
+    }
+
+    #skills .cards-container .skills__cards {
+        height: 10rem;
+        display: grid;
+        place-items: center;
     }
 }
