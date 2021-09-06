@@ -1,12 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5ed75722e8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Personal Portfolio</title>
 </head>
+
 <body>
+
+    <!-- The navigation bar-->
+    <nav id="navbar">
+        <div id="logo">Nicaisse</div>
+        <!-- principal menu -->
+        <div class="menu-container">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#welcome-section">Home</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome section -->
+    <section id="welcome-section">
+        <div class="presentation">
+            <div class="icons">
+                <p class="icons__elements">
+                    <a href="https://facebook.com/abanicaisse" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </p>
+                <p class="icons__elements">
+                    <a href="https://twitter.com/abanicaisse" target="_blank"><i class="fab fa-twitter"></i></a>
+                </p>
+                <p class="icons__elements">
+                    <a href="https://pinterest.com/abanicaisse" target="_blank"><i class="fab fa-pinterest"></i></a>
+                </p>
+                <p class="icons__elements">
+                    <a href="https://instagram.com/abanicaisse" target="_blank"><i class="fab fa-instagram"></i></a>
+                </p>
+            </div>
+
+            <div class="intro">
+                <h1>Hi, I am <span>Nicaisse</span></h1>
+                <p>I'm a junior Frontend Dev and I build beautiful static web sites with HTML and CSS</p>
+                <a href="#projects" class="intro__btn">My Work</a><a href="#contact" class="intro__btn">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="./img/progaramming.svg" alt="a programmer" class="welcome__img">
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+        <h1>Area of Expertise and Tech Used</h1>
+        <div class="cards-container">
+            <div class="skills__cards">
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, doloribus!</p>
+            </div>
+            <div class="skills__cards">
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, doloribus!</p>
+            </div>
+            <div class="skills__cards">
+                <h3>Git and GitHub</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, doloribus!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me section -->
+    <section id="about">
+        <h1>Hey, here's a summary of who I am</h1>
+        <div class="about__summary">
+            <div><img src="./img/Nicaisse.jpg" alt="This is me" class="summary__img"></div>
+            <div class="summary__description">
+                <h3>Hi guys,</h3>
+                <p>My name is Nicaisse, I'm a student in Software Engineering and I'm from Congo (D.R.C.).</p>
+                <p>Since I wrote my first line of code at high school in our computing course, I've been passionated by
+                    coding and computers in General.</p>
+                <p>I always feel amazed by Tech and by Everything that Tech allow us to do and built.</p>
+                <p>I really enjoy coding and programming because they help revealing the creative and entrepreneuring
+                    side
+                    of my personality</p>
+                <p>Would you like to check some of my code? Find them here:</p>
+                <div class="pro-links">
+                    <a href="https://github.com/abanicaisse" id="profile-link" class="code-link"><i class="fab fa-github"></i></a>
+                    <a href="https://codepen.io.com/Nicaisse" class="code-link"><i class="fab fa-codepen"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe section  -->
+    <section id="subscribe">
+        <h1>Subscribe and stay tunned</h1>
+        <div class="mail-input">
+            <input type="email" name="email" id="subscribe-email" placeholder="your email">
+            <a href="#" class="subscribe-btn">Subscribe</a>
+        </div>
+    </section>
+
+    <!-- Projects section  -->
+    <section id="projects">
+        <h1>My Work</h1>
+        <p>Here are some of other cool projects I've worked on</p>
+        <div class="projects-cards-container">
+            <div class="project-card project1">
+                <h3 class="project-title">Bill Gate Tribute</h3>
+                <img src="../projects-img/project1.png" alt="Tribute Page">
+                <div>
+                    <a href="https://github.com/abanicaisse/fcc-Responsive-WebDesign-Projects"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://codepen.io/Nicaisse/full/XWRObzl"><i class="fab fa-codepen"></i></a>
+                </div>
+            </div>
     
+            <div class="project-card project2">
+                <h3 class="project-title">CodeNoobs Survey Form</h3>
+                <img src="../projects-img/project2.png" alt="Survey Form">
+                <div>
+                    <a href="https://github.com/abanicaisse/fcc-Responsive-WebDesign-Projects"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://codepen.io/Nicaisse/full/OJgyRqM"><i class="fab fa-codepen"></i> </a>
+                </div>
+            </div>
+    
+            <div class="project-card project3">
+                <h3 class="project-title">Product Landing Page</h3>
+                <img src="../projects-img/project3.png" alt="Product Landing Page">
+                <div>
+                    <a href="https://github.com/abanicaisse/fcc-Responsive-WebDesign-Projects"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://codepen.io/Nicaisse/full/dyRYyMW"><i class="fab fa-codepen"></i> </a>
+                </div>
+            </div>
+    
+            <div class="project-card project4">
+                <h3 class="project-title">Technical Documentation</h3>
+                <img src="../projects-img/project4.png" alt="Technical Documentation Webpage">
+                <div>
+                    <a href="https://github.com/abanicaisse/fcc-Responsive-WebDesign-Projects"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://codepen.io/Nicaisse/full/XWRObzl"><i class="fab fa-codepen"></i> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <section id="footer">
+        <div class="useful-links">
+            <h3>Some useful Links</h3>
+            <div>
+                <ul>
+                    <li><a href="#welcome-section">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="contact">
+            <h3>Contact Me and Let's Collab !</h3>
+            <form action="mailto: abawandjovunicaise@gmail.com" class="form">
+                <label for="name">Name</label> <br>
+                <input type="text" name="name" id="name"> <br>
+    
+                <label for="email">Email</label> <br>
+                <input type="email" name="email" id="email"> <br>
+    
+                <label for="subject">Subject</label> <br>
+                <input type="text" name="subject" id="subject"> <br>
+    
+                <label for="message">Message</label> <br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea> <br>
+    
+                <button type="submit">submit</button>
+            </form>
+        </div>
+        <div>
+            <p>This project was built as part of the <strong>freeCodeCamp</strong> Responsive Web Design Curriculum</p>
+            <p>&copy Aba Wandjovu Nicaisse 2021</p>
+        </div>
+    </section>
+
 </body>
+
 </html>
