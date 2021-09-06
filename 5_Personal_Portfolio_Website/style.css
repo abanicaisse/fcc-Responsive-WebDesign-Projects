@@ -335,6 +335,7 @@ nav {
 #about .about__summary > div > img {
     width: 100%;
     height: auto;
+    border-radius: .3rem;
     margin: 2rem 0;
 }
 
@@ -669,7 +670,7 @@ nav {
     #about .about__summary {
         flex-direction: row;
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
         align-items: center;
     }
 
