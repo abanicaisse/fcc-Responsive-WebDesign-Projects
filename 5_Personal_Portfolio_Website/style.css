@@ -207,11 +207,15 @@ nav {
     width: 3rem;
     height: 3rem;
     font-size: 1.3rem;
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--accent-color2);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.icons .icons__elements .fab {
+    color: var(--accent-color)
 }
 
 .intro {
@@ -365,6 +369,7 @@ nav {
 #subscribe {
     width: 100%;
     background-color: var(--primary-color);
+    color: white;
     padding: 3rem 2rem;
     display: grid;
     place-items: center;
@@ -475,31 +480,72 @@ nav {
     padding-left: 3em;
 }
 
+/* Footer section */
+#footer {
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 3rem 2rem 1rem 2rem;
+}
+
+#footer .useful-links {
+    margin-bottom: 1.5rem;
+}
+
+#footer .useful-links div > ul > li {
+    list-style: none;
+    padding: 1rem 0 .5rem 0;
+}
+
+#footer .useful-links > div > ul > li a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer .useful-links > div > ul > li a:hover {
+    text-decoration: underline;
+}
+
+#footer #contact .form {
+    padding: 1rem 0 0 0;
+}
+
+#footer #contact .form > input, textarea {
+    width: 95%;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+    padding: .3rem .5rem;
+    border: 1px solid var(--accent-color2);
+    border-radius: .3rem;
+}
 
 
+#footer #contact .form > button {
+    font-size: 1.3rem;
+    background-color: var(--secondary-color);
+    color: var(--accent-color2);
+    padding: .5em 1rem;
+    border: 1px solid var(--accent-color2);
+    border-radius: .5rem;
+}
 
+#footer #contact + div {
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#footer #contact + div p + p {
+    padding-top: 1rem;
+}
 
 
 
 
 /* Media Querries */
-
 
 @media (min-width: 53.125rem) { /* for screen >= 850px */
         /* Navigation bar media Query */    
@@ -685,6 +731,18 @@ nav {
 
     #projects .projects-cards-container .project-card > img {
         max-width: 100%;
+    }
+
+        /* Footer section Media Querry */
+    #footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #footer #contact + div {
+        grid-column: 1/3;
     }
 }
 
